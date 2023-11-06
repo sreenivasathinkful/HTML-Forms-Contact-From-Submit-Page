@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+<form method="post" action="contact.php">
+	
+  <div>
+  <label for="name">Name:</label>
+	<!-- <input type="text" class="text" name="cf_name" id="name" /> -->
+  <br>
+  <input
+  id="name"
+  type="text"
+  name="zipcode"
+  autofocus="on"
+  maxlength="1000"
+  size = "100"
+  required
+  ></input>
+	</div>
+
+  <div>
+  <label for="email">Email:</label>
+  <br>
+  <input
+  id="Email"
+  type="text"
+  name="zipcode"
+  autofocus="on"
+  maxlength="1000"
+  size = "100"
+  required
+  ></input>
+	<!-- <input type="text" class="text" name="cf_email" id="email" /> -->
+  </div>
+	
+  
+
+  <div>
+    <label for="form-message">Your message:</label>
+    <br>
+    <textarea
+    id="form-message"
+    name="message"
+    autofocus="on"
+    required
+    maxlength="10000"
+    rows="10"   
+    cols="100" 
+    placeholder="How can I help you?"
+  ></textarea>
+	  <!-- <textarea class="text" name="cf_message" id="message"></textarea> -->
+
+</div>
+	<button type="submit">Submit</button>
+</form>
+</body>
+</main>
+</html>
